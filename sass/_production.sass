@@ -1,0 +1,47 @@
+.production
+	padding-top: 87px
+	padding-bottom: 95px
+	&-slider
+		&_top
+			z-index: 1
+			margin-bottom: 13px
+			
+		&_bottom
+			padding-left: 30px
+			padding-right: 30px
+			img
+				margin-right: 6px
+		img
+			outline: none
+.slider-arrow
+	width: 22px
+	height: 100%
+	border: 1px solid $button-color
+	position: absolute
+	&_left 
+		left: 0
+		background: #fff url('../img/productions/left-arrow.png') center no-repeat
+		&:hover
+			background: $button-color url('../img/productions/left-arrow_active.png') center no-repeat
+			cursor: pointer
+	&_right 
+		right: 0
+		top: 0
+		background: #fff url('../img/productions/right-arrow.png') center no-repeat
+		&:hover
+			background: $button-color url('../img/productions/right-arrow_active.png') center no-repeat
+			cursor: pointer
+.production-text
+	&__title
+		font-size: 28px
+		line-height: 22px
+		background-color: $button-color
+		padding: 20px 0 20px 50px
+		color: $text-color-light
+		margin-bottom: 28px 
+		margin-left: -50px
+		margin-top: 19px
+	&__description
+		color: $text-color-dark
+		font-size: 16px
+		line-height: 24px

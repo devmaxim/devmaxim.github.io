@@ -1,0 +1,90 @@
+.navigation
+	&-menu
+		position: fixed
+		top: 0
+		right: 0
+		z-index: 98
+		background-color: rgba(241,166,5,.9) 
+		height: 100%
+		padding-top: 7%
+		margin-right: -100%
+		transition: all 0.2s
+		&_active
+			display: block
+			margin-right: 0
+		ul
+			list-style: none
+			padding: 0
+			li
+				&:hover
+					background-color: rgba(255,255,255,0.1) 
+				a
+					letter-spacing: 5px
+					display: block
+					color: $text-color-dark
+					text-decoration: none
+					height: 50px
+					vertical-align: middle
+					line-height: 50px
+					padding-left: 30px
+					padding-right: 40px
+					transition: 0.3s 
+					&:hover
+						color: #FFF 
+	transition: all 0.2s
+	position: fixed
+	right: 30px
+	top: 65px
+	border: 1px solid none
+	border-radius: 5px
+	cursor: pointer
+	width: 40px
+	height: 40px
+	background-color: $button-color 
+	box-shadow: 3px 3px 5px rgba(169, 119, 0, .8)
+	z-index: 99
+	span
+		position: absolute
+		height: 2px
+		width: 22px
+		background-color: $text-color-light 
+		left: 50%
+		transform: translateX(-50%)
+		top: 50%
+		
+		
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			height: 2px
+			width: 22px
+			background-color: $text-color-light 
+			left: 50%
+			margin-left: -50%
+			top: -7px
+			transition: all 0.2s
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			height: 2px
+			width: 22px
+			background-color: $text-color-light 
+			left: 50%
+			margin-left: -50%
+			top: 7px
+			transition: all 0.2s
+	&_active
+		background-color: transparent
+		border: none
+		box-shadow: none  
+		span
+			background-color: transparent
+			&::before
+				transform: rotate(135deg)
+				top: 0
+			&::after
+				transform: rotate(-135deg)
+				top: 0
+			
